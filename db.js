@@ -8,7 +8,7 @@ const connection = mysql.createConnection({
     user: 'root',               // The MySQL username
     password: '',               // The MySQL password (if any)
     port: '3306',               // The port number to use for the connection
-    database: 'loginRegisterApiNodejs',      // The name of the database to connect to
+    database: 'pfe_tabibi',      // The name of the database to connect to
 });
 
 // Connect to the database

@@ -21,7 +21,19 @@ app.use(bodyParser.json());
 const userRouter = require('./user');
 app.use('/user', userRouter);
 
+// Import the urgance router to fetch the data
+const urganceRouter = require('./urgance');
+app.use( urganceRouter);
+// Import the urgance router to fetch the data
+const subUrganceRouter = require('./sub-urgance');
+app.use( subUrganceRouter);
+// Import the users router to fetch the data
+const usersRouter = require('./fetchUsers');
+app.use( usersRouter);
+
+
+
 // Start the Express app and listen on port 3000
-app.listen(3000, "192.168.1.6", () => {
+app.listen(3000, "192.168.1.26", () => {
   console.log('Server is running on port 3000');
 });
